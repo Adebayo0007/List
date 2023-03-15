@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 20px;
+}
+
+#head{
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+#head span{
+    flex: 1;
+    text-align: center;
+    font-weight: 500;
+}
+
+#inputs{
+    margin-top: 20px;
+}
+
+#inputs{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+   
+}
+
+#color-con{
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+.color{
+    flex-shrink: 0;
+    background: purple;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.color#active{
+    border: 2px solid black;
+}
+
+#add-color{
+   color: rgb(160 160 160);
+   font-size: 20px;
+}
+
+#inputs>div>.label{
+    font-size: 14px;
+    color: rgb(160 160 160);
+    font-weight: 500;
+}
+
+#date-time{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#place{
+    margin: 20px 0;
+    display: flex;
+}
+
+#place input::placeholder{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#place input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+#categories {
+    margin: 20px 0;
+    display: flex;
+    gap: 5px;
+    overflow-x: auto;
+}
+
+.category {
+    flex-shrink: 0;
+    color: black;
+    border-radius: 20px;
+    border: 1px solid black;
+    margin: auto;
+    text-align: center;
+    padding: 5px 20px;
+    transition: all .2s;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.category:hover,
+.category.active {
+    background-color: black;
+    color: white;
+}
+
+#save{
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+#save-btn{
+    border-radius: 45px;
+    text-align: center;
+    width: 80%;
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    font: 500;
+    font-size: 18px;
+    transition: all .2s;
+}
+
+#save-btn:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}

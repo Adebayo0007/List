@@ -1,0 +1,224 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 10px;
+}
+
+#head {
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#head>#grid-con {
+    background-color: black;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#head h3 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#head>i {
+    font-size: 22px;
+}
+
+#welcome {
+    flex-basis: 10%;
+    display: flex;
+    align-items: center;
+}
+
+#greeting {
+    flex: 1;
+}
+
+#greeting p:nth-child(2) {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#search {
+    background-color: black;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#task-con {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+}
+
+.task-item {
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(251 225 20);
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    gap: 5px;
+}
+
+#red-dot {
+    background: red;
+    border-radius: 100%;
+    width: 9px;
+    height: 9px;
+    top: -5px;
+    left: -9px;
+    position: relative;
+}
+
+#filters {
+    flex-basis: 5%;
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+}
+
+#filters div {
+    flex-shrink: 0;
+    color: black;
+    border-radius: 15px;
+    margin: auto;
+    text-align: center;
+    padding: 5px 0;
+    flex: 1;
+    transition: all .2s;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+#filters div:hover,
+#filters div.active {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#hidden {
+    display: none;
+}
+
+.pen {
+    background: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+}
+
+.circle {
+    font-size: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 10px;
+}
+
+.categories div {
+    border: 1px solid gray;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 10px;
+}
+
+.task-title {
+    font-weight: 600;
+}
+
+.date,
+.time {
+    color: rgba(0, 0, 0, 0.674);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.date span,
+.time span {
+    margin-left: 5px;
+}
+
+.time {
+    margin-top: 3px;
+}
+
+.btn-con {
+    position: fixed;
+    width: 100vw;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,0.09585084033613445) 35%, rgba(255,255,255,1) 100%);
+}
+
+#add-btn {
+    padding: 10px 20px;
+    border-radius: 25px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    background: black;
+    transition: all .3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#add-btn:hover{
+    color: black;
+    background-color: white;
+}
+#add-btn i{
+    margin-right: 5px;
+    font-size: 20px;
+}
